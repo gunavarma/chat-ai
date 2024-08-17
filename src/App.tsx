@@ -95,7 +95,6 @@ function ChatBubble({
   );
 }
 
-// App component
 const App: React.FC = () => {
   const [question, setQuestion] = useState("");
   const [chatHistory, setChatHistory] = useState<
