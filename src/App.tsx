@@ -28,9 +28,7 @@ function App() {
     setChatHistory((prev) => [...prev, { text: question, isUser: true }]);
     try {
       const response = await axios({
-        url: `https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=${
-          import.meta.env.VITE_API_GENERATIVE_LANGUAGE_CLIENT
-        }`,
+        url: `https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=AIzaSyCinaZdx6yuylrZ7KIcYAnEOghLDw0_p4k`,
         method: "post",
         data: {
           contents: [{ parts: [{ text: question }] }],
